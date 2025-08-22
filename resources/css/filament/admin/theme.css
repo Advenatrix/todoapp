@@ -1,0 +1,14 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+/* @import 'tailwindcss'; */
+@source '../../../../app/Filament';
+@source '../../../../resources/views/filament';
+
+/* Smooth width change
+.fi-sidebar {
+   transition: width 1.3s ease-in-out;
+} */
+
+/* Optional: fade text + icons when collpnpm iapsing */
+/* .fi-sidebar .fi-sidebar-nav {
+   transition: opacity 1.3s ease-in-out;
+} */

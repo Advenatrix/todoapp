@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Todos;
 
+use app\Filament\Clusters\UserManagement\UserManagementCluster;
 use App\Filament\Resources\Todos\Pages\CreateTodo;
 use App\Filament\Resources\Todos\Pages\EditTodo;
 use App\Filament\Resources\Todos\Pages\ListTodos;
@@ -13,10 +14,15 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use UnitEnum;
+
+
 
 class TodoResource extends Resource
 {
     protected static ?string $model = Todo::class;
+
+    protected static string | UnitEnum | null $navigationGroup = 'User Management';
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
